@@ -30,7 +30,8 @@
     > [!Note]
     > The Midterm grade will not override the Final Exam grade.
 
-> [!Note] >**No Late Work is Accepted**
+> [!Note]
+> **No Late Work is Accepted**
 
 > [!Note]
 > 📌 You can get up to 5 bonus points toward your Final grade.
