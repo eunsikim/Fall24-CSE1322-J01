@@ -27,11 +27,11 @@
 -   About Labs and Assignments:
     -   The lowest Lab and the lowest Assignment are dropped, so the final grade will only count 11 Labs and 6 Assignments out of 12 Labs and 7 Assignments
 -   About the Final Exam: - You will get some extra bonus points towards your final exam grade by attending the CSE Tutoring Center. - Each walk-in/appointment session will give you an 0.5 bonus points. This can be accumulated up to 5. - If your final exam grade is higher than the midterm, it overrides the midterm exam grade.
-    > [!Note]
-    > The Midterm grade will not override the Final Exam grade.
 
 > [!Note]
-> **No Late Work is Accepted**
+> The Midterm grade will not override the Final Exam grade.
+
+> [!Note] > **No Late Work is Accepted**
 
 > [!Note]
 > 📌 You can get up to 5 bonus points toward your Final grade.
