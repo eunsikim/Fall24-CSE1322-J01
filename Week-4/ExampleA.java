@@ -40,7 +40,7 @@ class Student {
 
     @Override
     public String toString() {
-        return "Hi my name is " + name + " my id is: " + id;
+        return "Hi my name is " + name + " my id is: " + id + " GPA: " + gpa;
     }
 }
 
@@ -73,22 +73,35 @@ public class ExampleA {
 
     public static void main(String[] args) {
         // Initialize ArrayList
-
+        ArrayList<Student> listOfStudents = new ArrayList<>();
         // Add to ArrayList
+        listOfStudents.add(new Student("Eun Sik", 2.0f));
 
         // Add by index
-
+        listOfStudents.add(1, new Student("John Doe", 3.0f));
+        check(listOfStudents);
         // Read item in ArrayList
+        System.out.println(listOfStudents.get(1));
 
         // Edit item in ArrayList
+        listOfStudents.get(1).setGPA(4.0f);
 
         // Remove by object
+        listOfStudents.remove(listOfStudents.get(0));
 
-        // Remove by index
+        // // Remove by index
+        listOfStudents.remove(0);
+        check(listOfStudents);
 
         // Other useful ArrayList functions:
         // size()
+        System.out.println(listOfStudents.size());
 
         // isEmpty()
+        if (listOfStudents.isEmpty()) {
+            System.out.println("List is empty");
+        } else {
+            System.out.println("List is not empty");
+        }
     }
 }
