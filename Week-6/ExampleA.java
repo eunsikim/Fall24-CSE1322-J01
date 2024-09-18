@@ -117,9 +117,9 @@ public class ExampleA {
     }
 
     public static void main(String[] args) {
-        Player[] entityArr = new Player[5];
+        Player[] entityArr = new Player[5]; // We can only store Player type!
         entityArr[0] = new Player(0, null);
-        entityArr[1] = new Archer(0, null);
+        entityArr[1] = new Archer(0, null); // To store Player and Archer, we need an array of Entity
 
         Entity playerOne = new Player(100, "Player One");
         Entity shapeshifter = new Archer(100, "The Shapeshifter: Archer Mode");
