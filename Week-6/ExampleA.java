@@ -107,7 +107,7 @@ class Player extends Entity {
 }
 
 public class ExampleA {
-    public void playRound(Entity one, Entity two) {
+    public static void playRound(Entity one, Entity two) {
         one.takeDamage(two.attack());
         System.out.println(one);
 
@@ -117,26 +117,24 @@ public class ExampleA {
     }
 
     public static void main(String[] args) {
-        Entity player1 = new Player(100, "Player One");
+        Player[] entityArr = new Player[5];
+        entityArr[0] = new Player(0, null);
+        entityArr[1] = new Archer(0, null);
 
-        Entity shapeshifterEnemy = new Archer(100, "Shapeshifter Enemy Archer");
+        Entity playerOne = new Player(100, "Player One");
+        Entity shapeshifter = new Archer(100, "The Shapeshifter: Archer Mode");
 
-        shapeshifterEnemy = new Mage(shapeshifterEnemy.getHP(), "Shapeshifter Enemy Mage");
-
-        player1.takeDamage(shapeshifterEnemy.attack());
-        System.out.println(player1);
-
-        shapeshifterEnemy.takeDamage(player1.attack());
-        System.out.println(shapeshifterEnemy);
+        System.out.println(playerOne);
+        System.out.println(shapeshifter);
         System.out.println();
 
-        shapeshifterEnemy = new Warrior(shapeshifterEnemy.getHP(), "Shapeshifter Enemy Warrior");
+        playRound(playerOne, shapeshifter);
 
-        player1.takeDamage(shapeshifterEnemy.attack());
-        System.out.println(player1);
+        shapeshifter = new Mage(shapeshifter.getHP(), "The Shapeshifter: Mage Mode");
 
-        shapeshifterEnemy.takeDamage(player1.attack());
-        System.out.println(shapeshifterEnemy);
-        System.out.println();
+        playRound(playerOne, shapeshifter);
+
+        shapeshifter = new Warrior(shapeshifter.getHP(), "The Shapeshifter: Warrior Mode");
+        playRound(playerOne, shapeshifter);
     }
 }
